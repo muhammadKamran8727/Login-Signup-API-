@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oiAAwhcBWiZdwILcYcaI9fhUd5R70VOXnTFiKrij8KFyMZ4hrqm+Q5pJGk05SgO1F26JdO/Ngi1daV8+lvWTSQ==",
+  "dgSpecHash": "T/HvR7PuVMztbCajG7sKxJcHnehIndoUkBXgsMWRqnHikOAkhE3Xo9tIP6nqBEejgMvAeLDmSX9u9gom54sZpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\ForgetPasswordAPI\\ForgetPasswordAPI\\ForgetPasswordAPI.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,8 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\visualstudio.gitignore\\1.0.1\\visualstudio.gitignore.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }
