@@ -18,12 +18,12 @@ namespace ForgetPasswordAPI.Controllers
     [Route("api/[controller]")]
     public class AuthenticationController : ControllerBase
     {
-        
+
 
         private readonly ILoginBL _iloginBL;
-        public AuthenticationController( ILoginBL iloginBL)
+        public AuthenticationController(ILoginBL iloginBL)
         {
-           
+
             _iloginBL = iloginBL;
         }
 
@@ -52,7 +52,7 @@ namespace ForgetPasswordAPI.Controllers
             {
                 var response = _iloginBL.Login(user);
                 if (response != null && response.IsError == false)
-                    return new ApiResponse { StatusCode = 200, Message = response.Message,Result = response.Result };
+                    return new ApiResponse { StatusCode = 200, Message = response.Message, Result = response.Result };
 
                 return new ApiResponse { StatusCode = 500, Message = response.Message, Result = response.Result };
             }
@@ -69,7 +69,7 @@ namespace ForgetPasswordAPI.Controllers
             {
                 var response = _iloginBL.ForgetPassword(email);
                 if (response != null && response.IsError == false)
-                    return new ApiResponse { StatusCode = 200, Message = response.Message ,Result=response.Result };
+                    return new ApiResponse { StatusCode = 200, Message = response.Message, Result = response.Result };
 
                 return new ApiResponse { StatusCode = 500, Message = response.Message, Result = response.Result };
             }
@@ -82,11 +82,11 @@ namespace ForgetPasswordAPI.Controllers
 
 
         [HttpPost("resetpassword")]
-        public ApiResponse ResetPassword(string email, string resetToken, string newPassword)
+        public ApiResponse ResetPassword(string email, string enteredPin, string newPassword)
         {
             try
             {
-                var response = _iloginBL.ResetPassword(email, resetToken, newPassword);
+                var response = _iloginBL.ResetPassword(email, enteredPin, newPassword);
                 if (response != null && response.IsError == false)
                     return new ApiResponse { StatusCode = 200, Message = response.Message };
 

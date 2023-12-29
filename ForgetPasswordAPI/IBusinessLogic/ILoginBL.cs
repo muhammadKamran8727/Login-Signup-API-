@@ -7,6 +7,6 @@ namespace ForgetPasswordAPI.IBusinessLogic
         Response SignUp(User user);
         Response Login(User user);
         Response ForgetPassword(string email);
-        Response ResetPassword(string email, string resetToken, string newPassword);
+        Response ResetPassword(string email, string enteredPin, string newPassword);
     }
 }

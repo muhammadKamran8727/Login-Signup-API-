@@ -15,6 +15,7 @@ namespace ForgetPasswordAPI.Models
             [Required]
             [MinLength(8)]
             public string? Password { get; set; }
+            public string? ResetPin { get; set; }
         
     }
 }

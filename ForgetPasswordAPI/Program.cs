@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 var provider = builder.Services.BuildServiceProvider();
 builder.Services.AddScoped<ILoginBL, LoginBL>();
+builder.Services.AddScoped<EmailService>();
 
 var Configuration = provider.GetService<IConfiguration>();
 builder.Services.AddControllers();
